@@ -4,19 +4,7 @@ using UnityEngine;
 
 public class ObjectDestroyer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    // Destrói itens quando chegam fora do mapa
+    // Destroy objects outside screen
     private void OnTriggerEnter2D(Collider2D collision2d)
     {
         switch (collision2d.tag)
